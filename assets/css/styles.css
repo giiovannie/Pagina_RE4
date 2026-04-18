@@ -1,5 +1,5 @@
 /*
-Descripcion: estilos genrales para las paginas del RE4
+Descripcion: estilos genrales para las paginas del RE4(header y footer) y estilos propio de la pagina inicio
 17/04/26
 */
 
@@ -184,6 +184,7 @@ nav a:hover{
 }
 
 .description-hero{
+    color: #f5f5f5;
     font-size: 1.5rem;
 }
 
@@ -476,6 +477,12 @@ iframe{
     color: #f5f5f5;
 }
 
+.store-section p{
+    font-weight: 600;
+    color: #f5f5f5;
+    font-size: 1rem;
+}
+
 .store-section button{
     padding: 10px 8px;
     background-color: #FFD60A;
@@ -523,27 +530,40 @@ iframe{
     background-color: #003791;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     padding: 8px;
+    align-items: stretch;
 }
 
+footer section{
+    padding: 16px 24px;
+}
+
+footer section:last-child{
+    border-right: none;
+}
 .section-footer-1{
     display: flex;
     flex-direction: column;
     width: auto;
-    width: 25%;
+    padding: 10px 16px;
 }
 
-.section-footer-1 h2,p{
+.section-footer-1 h2,
+.section-footer-1 p{
     color: #f5f5f5;
+}
+
+.section-footer-1 h2{
+    text-align: center;
 }
 
 .content-img-footer{
     max-width: 100%;
     display: flex;
     gap: 12px;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
@@ -556,10 +576,13 @@ iframe{
 }
 /*section de logos de redes sociales de la pagina*/
 .section-social{
-    margin-right: 10px;
     display: flex;
+    justify-content: center;
+    align-items:center;
     gap: 5px;
     flex-direction: column;
+    height: 100%;
+    width: 280px;
 }
 
 .h5-footer{
