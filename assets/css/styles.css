@@ -389,8 +389,12 @@ i{
     color: #003791;
 }
 
-br{
-    background-color: #f5f5f5;
+.game-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
 }
 
 /*video section*/
@@ -500,14 +504,14 @@ iframe{
 }
 
 .store-section img:first-child{
-    width: clamp(12%,10dvw,16%);
+    width: clamp(12%,8dvw,13%);
     left: 5%;
     bottom: 0;
 }
 
 
 .store-section img:nth-child(2){
-    width: clamp(10%,2dvw,15%);
+    width: clamp(10%,2dvw,13%);
     right: 5%;
     bottom: 0;
 }
@@ -536,13 +540,20 @@ iframe{
 }
 
 .content-img-footer{
-    max-width: 20%;
+    max-width: 100%;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
 }
 
-.content-img-footer img{
-    width: 100%;
+.content-img-footer img:first-child{
+    width: 100px;
 }
 
+.content-img-footer img:nth-child(2){
+    width: 200px;
+}
 /*section de logos de redes sociales de la pagina*/
 .section-social{
     margin-right: 10px;
